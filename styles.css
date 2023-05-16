@@ -11,6 +11,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0px 10px;
+  background: white;
+  height: 75px;
 }
 .icon__container {
   width: 100px;
@@ -33,7 +35,7 @@ body {
   text-decoration: none;
   color: rgb(116, 121, 139);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
 }
 .navbar__right {
   display: flex;
@@ -42,8 +44,29 @@ body {
   justify-content: center;
 }
 .icon__container__right {
-  width: 100px;
+  width: 40px;
 }
 .icon__container__right img {
   width: 100%;
+}
+.icon__container__right img:hover {
+  cursor: pointer;
+}
+.navbar__right p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.navbar__right p:hover {
+  color: green;
+}
+.adBtn {
+  border: transparent;
+  margin-left: 20px;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 16px;
+  background-color: rgb(244, 35, 101);
+  font-size: 16px;
+  font-weight: 500;
 }
