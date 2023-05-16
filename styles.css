@@ -97,8 +97,9 @@ body {
   object-fit: cover;
 }
 .item__right {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  /* display: flex; */
+  /* flex-direction: column; */
   padding: 10px;
   width: 100%;
 }
@@ -109,10 +110,28 @@ body {
 }
 .product__description {
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
   color: rgb(92, 152, 236);
+  display: block;
+  max-width: 400px; /* or width: 200px; */
 }
+
 .product__price {
   color: rgb(197, 23, 82);
   font-weight: 500;
+}
+.envelope__icon {
+  position: absolute;
+  top: 5px;
+  right: 50px;
+  font-size: 25px;
+  color: gray;
+}
+.heart__icon {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 25px;
+  color: gray;
 }

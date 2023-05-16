@@ -102,12 +102,25 @@ function renderElements(data) {
     productDescription.classList.add("product__description");
     productDescription.textContent = product.description;
 
+    const envelopeIcon = document.createElement("span");
+    envelopeIcon.classList.add("envelope__icon");
+    const envIcon = document.createElement("i");
+    envIcon.classList.add("fa-regular", "fa-envelope");
+    const heartIcon = document.createElement("span");
+    heartIcon.classList.add("heart__icon");
+    const hIcon = document.createElement("i");
+    hIcon.classList.add("fa-solid", "fa-heart");
+    heartIcon.appendChild(hIcon);
+    envelopeIcon.appendChild(envIcon);
+
     const productPrice = document.createElement("span");
     productPrice.classList.add("product__price");
     productPrice.textContent = product.price + "AZN";
     itemRight.appendChild(mobilePath);
     itemRight.appendChild(productDescription);
     itemRight.appendChild(productPrice);
+    itemRight.appendChild(envelopeIcon);
+    itemRight.appendChild(heartIcon);
     mainContainer.appendChild(itemContainer);
 
     const bodyElement = document.querySelector("body");
