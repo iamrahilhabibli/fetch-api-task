@@ -53,6 +53,7 @@ heartIcon.setAttribute("alt", "Heart icon");
 iconContainerRight.appendChild(heartIcon);
 
 const loginText = document.createElement("p");
+loginText.classList.add("login__text");
 loginText.textContent = "Giris • Qeydiyyat";
 
 const adBtn = document.createElement("button");
