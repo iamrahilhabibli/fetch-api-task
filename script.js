@@ -121,7 +121,7 @@ function renderElements(data) {
     //PRICE
     const productPrice = document.createElement("span");
     productPrice.classList.add("product__price");
-    productPrice.textContent = product.price + "AZN";
+    productPrice.textContent = product.price + "   " + "AZN";
 
     //CALL
     const call = document.createElement("p");

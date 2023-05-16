@@ -82,15 +82,19 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+.adBtn:hover {
+  cursor: pointer;
+}
 .main__container {
   display: flex;
   flex-direction: column;
   width: max-content;
   height: max-content;
-  margin-top: 100px;
-  gap: 30px;
+  gap: 10px;
   margin-left: 30px;
+  margin-top: 30px;
 }
+
 .item__container {
   height: 200px;
   width: 700px;
@@ -110,8 +114,6 @@ body {
 }
 .item__right {
   position: relative;
-  /* display: flex; */
-  /* flex-direction: column; */
   padding: 10px;
   width: 100%;
 }
@@ -133,12 +135,13 @@ body {
 
 .product__price {
   color: rgb(197, 23, 82);
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 800;
 }
 .envelope__icon {
   position: absolute;
-  top: 5px;
-  right: 50px;
+  top: 10px;
+  right: 60px;
   font-size: 25px;
   color: gray;
 }
@@ -152,7 +155,7 @@ body {
 }
 .heart__icon {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 15px;
   font-size: 25px;
   color: gray;
@@ -160,7 +163,7 @@ body {
 .call_us {
   position: absolute;
   bottom: 10px;
-  right: 20px;
+  right: 15px;
   font-size: 20px;
   font-weight: 600;
   color: rgb(74, 201, 102);
