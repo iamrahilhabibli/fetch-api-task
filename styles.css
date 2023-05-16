@@ -39,6 +39,13 @@ body {
   font-weight: 500;
   font-size: 20px;
 }
+.for__business {
+  font-weight: 500;
+}
+.for__business:hover {
+  color: rgb(74, 201, 102);
+  transition: 0.3s;
+}
 .navbar__right {
   display: flex;
   flex-direction: row;

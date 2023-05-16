@@ -26,14 +26,18 @@ iconContainer.classList.add("icon__container");
 const lalafoIcon = document.createElement("img");
 lalafoIcon.setAttribute("src", "./images/Green_lalafo.png");
 lalafoIcon.setAttribute("alt", "Lalafo Icon");
+const homePage = document.createElement("a");
+homePage.setAttribute("href", "https://lalafo.az");
+homePage.appendChild(lalafoIcon);
 
-iconContainer.appendChild(lalafoIcon);
+iconContainer.appendChild(homePage);
 
 const barsIcon = document.createElement("i");
 barsIcon.classList.add("fa-solid", "fa-bars");
 
 const forBusiness = document.createElement("a");
 forBusiness.setAttribute("href", "https://lalafo.az/info/paid-posting");
+forBusiness.classList.add("for__business");
 forBusiness.textContent = "Biznes ucun";
 
 navbarLeft.appendChild(iconContainer);
