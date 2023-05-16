@@ -95,13 +95,13 @@ function renderElements(data) {
 
     itemContainer.appendChild(itemRight);
 
-    const mobilePath = document.createElement("p");
-    mobilePath.classList.add("mobile__phone");
-    mobilePath.innerText = "Mobil Telefonlar >";
-    const spanName = document.createElement("span");
-    spanName.classList.add("product__name");
-    spanName.innerText = product.title;
-    mobilePath.appendChild(spanName);
+    // const mobilePath = document.createElement("p");
+    // mobilePath.classList.add("mobile__phone");
+    // mobilePath.innerText = "Mobil Telefonlar >";
+    // const spanName = document.createElement("span");
+    // spanName.classList.add("product__name");
+    // spanName.innerText = product.title;
+    // mobilePath.appendChild(spanName);
     //PRODUCT DESCRIPTION
     const productDescription = document.createElement("h4");
     productDescription.classList.add("product__description");
@@ -129,7 +129,7 @@ function renderElements(data) {
     call.innerText = "Zeng edin";
 
     //ITEMCONTAINER RIGHT APPENDS
-    itemRight.appendChild(mobilePath);
+    // itemRight.appendChild(mobilePath);
     itemRight.appendChild(productDescription);
     itemRight.appendChild(productPrice);
     itemRight.appendChild(envelopeIcon);
