@@ -81,7 +81,7 @@ function renderElements(data) {
     imgContainer.classList.add("img__container");
 
     const imgElement = document.createElement("img");
-    imgElement.src = "";
+    imgElement.src = product.images[0];
     imgContainer.appendChild(imgElement);
     itemContainer.appendChild(imgContainer);
 
