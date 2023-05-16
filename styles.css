@@ -81,7 +81,7 @@ body {
 }
 .item__container {
   height: 200px;
-  width: 75vw;
+  width: 700px;
   background-color: white;
   border-radius: 8px;
   border: 1px solid rgb(220, 221, 226);
@@ -89,7 +89,7 @@ body {
 }
 .img__container {
   height: 100%;
-  width: 250px;
+  width: 35%;
 }
 .img__container img {
   width: 100%;
@@ -100,9 +100,19 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  width: 100%;
 }
 .mobile__phone,
 .product__name {
   color: rgb(115, 125, 155);
   font-size: 12px;
+}
+.product__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(92, 152, 236);
+}
+.product__price {
+  color: rgb(197, 23, 82);
+  font-weight: 500;
 }

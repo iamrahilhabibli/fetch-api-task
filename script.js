@@ -99,7 +99,7 @@ function renderElements(data) {
     mobilePath.appendChild(spanName);
 
     const productDescription = document.createElement("h4");
-    productDescription.classList.add("product__title");
+    productDescription.classList.add("product__description");
     productDescription.textContent = product.description;
 
     const productPrice = document.createElement("span");
