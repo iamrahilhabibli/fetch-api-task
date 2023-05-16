@@ -63,6 +63,4 @@ navbarContainer.appendChild(navbarRight);
 const header = document.querySelector("header");
 header.appendChild(navbarContainer);
 
-function renderElements(data) {
-  // implementation here
-}
+function renderElements(data) {}
