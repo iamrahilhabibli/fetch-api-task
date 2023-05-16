@@ -97,11 +97,12 @@ function renderElements(data) {
     spanName.classList.add("product__name");
     spanName.innerText = product.title;
     mobilePath.appendChild(spanName);
-
+    //PRODUCT DESCRIPTION
     const productDescription = document.createElement("h4");
     productDescription.classList.add("product__description");
     productDescription.textContent = product.description;
 
+    //ICONS
     const envelopeIcon = document.createElement("span");
     envelopeIcon.classList.add("envelope__icon");
     const envIcon = document.createElement("i");
@@ -112,15 +113,23 @@ function renderElements(data) {
     hIcon.classList.add("fa-solid", "fa-heart");
     heartIcon.appendChild(hIcon);
     envelopeIcon.appendChild(envIcon);
-
+    //PRICE
     const productPrice = document.createElement("span");
     productPrice.classList.add("product__price");
     productPrice.textContent = product.price + "AZN";
+
+    //CALL
+    const call = document.createElement("p");
+    call.classList.add("call_us");
+    call.innerText = "Zeng Edin";
+
+    //ITEMCONTAINER RIGHT APPENDS
     itemRight.appendChild(mobilePath);
     itemRight.appendChild(productDescription);
     itemRight.appendChild(productPrice);
     itemRight.appendChild(envelopeIcon);
     itemRight.appendChild(heartIcon);
+    itemRight.appendChild(call);
     mainContainer.appendChild(itemContainer);
 
     const bodyElement = document.querySelector("body");
