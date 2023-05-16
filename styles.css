@@ -81,7 +81,7 @@ body {
 }
 .item__container {
   height: 200px;
-  width: 40vw;
+  width: 50vw;
   background-color: white;
   border-radius: 8px;
   border: 1px solid rgb(220, 221, 226);
@@ -90,9 +90,14 @@ body {
 .img__container {
   height: 100%;
   width: 250px;
-  background-color: black;
 }
 .item__right {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+}
+.mobile__phone,
+.product__name {
+  color: rgb(115, 125, 155);
+  font-size: 12px;
 }

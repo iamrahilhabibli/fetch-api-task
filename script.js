@@ -1,12 +1,12 @@
 fetch("https://dummyjson.com/products")
   .then((res) => res.json())
   .then((data) => {
-    console.log(data.products[0]);
+    renderElements(data);
   });
 
-fetch("https://dummyjson.com/products")
-  .then((res) => res.json())
-  .then((data) => console.log(data));
+// fetch("https://dummyjson.com/products")
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
 
 const navbarContainer = document.createElement("div");
 navbarContainer.classList.add("navbar__container");
@@ -63,36 +63,48 @@ navbarContainer.appendChild(navbarRight);
 const header = document.querySelector("header");
 header.appendChild(navbarContainer);
 
-// function renderElements() {
-//   const mainContainer = document.createElement("div");
-//   mainContainer.classList.add("main__container");
+function renderElements(data) {
+  data.products.forEach((product) => {
+    const mainContainer = document.createElement("div");
+    mainContainer.classList.add("main__container");
 
-//   const itemContainer = document.createElement("div");
-//   itemContainer.classList.add("item__container");
+    const itemContainer = document.createElement("div");
+    itemContainer.classList.add("item__container");
 
-//   const imgContainer = document.createElement("div");
-//   imgContainer.classList.add("img__container");
+    const imgContainer = document.createElement("div");
+    imgContainer.classList.add("img__container");
 
-//   itemContainer.appendChild(imgContainer);
+    const imgElement = document.createElement("img");
+    imgElement.src = "";
+    imgContainer.appendChild(imgElement);
+    itemContainer.appendChild(imgContainer);
 
-//   const itemRight = document.createElement("div");
-//   itemRight.classList.add("item__right");
+    const itemRight = document.createElement("div");
+    itemRight.classList.add("item__right");
 
-//   itemContainer.appendChild(itemRight);
+    itemContainer.appendChild(itemRight);
 
-//   const productTitle = document.createElement("h4");
-//   productTitle.classList.add("product__title");
-//   productTitle.textContent = "Hello World";
+    const mobilePath = document.createElement("p");
+    mobilePath.classList.add("mobile__phone");
+    mobilePath.innerText = "Mobil Telefonlar >";
+    const spanName = document.createElement("span");
+    spanName.classList.add("product__name");
+    spanName.innerText = "Product Name";
+    mobilePath.appendChild(spanName);
 
-//   const productPrice = document.createElement("span");
-//   productPrice.classList.add("product__price");
-//   productPrice.textContent = "0";
+    const productTitle = document.createElement("h4");
+    productTitle.classList.add("product__title");
+    productTitle.textContent = product.title;
 
-//   itemRight.appendChild(productTitle);
-//   itemRight.appendChild(productPrice);
-//   mainContainer.appendChild(itemContainer);
+    const productPrice = document.createElement("span");
+    productPrice.classList.add("product__price");
+    productPrice.textContent = "0";
+    itemRight.appendChild(mobilePath);
+    itemRight.appendChild(productTitle);
+    itemRight.appendChild(productPrice);
+    mainContainer.appendChild(itemContainer);
 
-//   const bodyElement = document.querySelector("body");
-//   bodyElement.appendChild(mainContainer);
-// }
-// renderElements();
+    const bodyElement = document.querySelector("body");
+    bodyElement.appendChild(mainContainer);
+  });
+}
