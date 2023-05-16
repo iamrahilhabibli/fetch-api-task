@@ -145,8 +145,12 @@ body {
 }
 .call_us {
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
   right: 20px;
   font-size: 20px;
+  font-weight: 600;
   color: rgb(74, 201, 102);
+}
+.call_us:hover {
+  cursor: pointer;
 }

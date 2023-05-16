@@ -121,7 +121,7 @@ function renderElements(data) {
     //CALL
     const call = document.createElement("p");
     call.classList.add("call_us");
-    call.innerText = "Zeng Edin";
+    call.innerText = "Zeng edin";
 
     //ITEMCONTAINER RIGHT APPENDS
     itemRight.appendChild(mobilePath);
