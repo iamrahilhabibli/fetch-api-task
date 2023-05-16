@@ -4,9 +4,9 @@ fetch("https://dummyjson.com/products")
     console.log(data.products[0]);
   });
 
-// fetch("https://dummyjson.com/products")
-//   .then((res) => res.json())
-//   .then((data) => console.log(data));
+fetch("https://dummyjson.com/products")
+  .then((res) => res.json())
+  .then((data) => console.log(data));
 
 const navbarContainer = document.createElement("div");
 navbarContainer.classList.add("navbar__container");
@@ -63,36 +63,36 @@ navbarContainer.appendChild(navbarRight);
 const header = document.querySelector("header");
 header.appendChild(navbarContainer);
 
-function renderElements() {
-  const mainContainer = document.createElement("div");
-  mainContainer.classList.add("main__container");
+// function renderElements() {
+//   const mainContainer = document.createElement("div");
+//   mainContainer.classList.add("main__container");
 
-  const itemContainer = document.createElement("div");
-  itemContainer.classList.add("item__container");
+//   const itemContainer = document.createElement("div");
+//   itemContainer.classList.add("item__container");
 
-  const imgContainer = document.createElement("div");
-  imgContainer.classList.add("img__container");
+//   const imgContainer = document.createElement("div");
+//   imgContainer.classList.add("img__container");
 
-  itemContainer.appendChild(imgContainer);
+//   itemContainer.appendChild(imgContainer);
 
-  const itemRight = document.createElement("div");
-  itemRight.classList.add("item__right");
+//   const itemRight = document.createElement("div");
+//   itemRight.classList.add("item__right");
 
-  itemContainer.appendChild(itemRight);
+//   itemContainer.appendChild(itemRight);
 
-  const productTitle = document.createElement("h4");
-  productTitle.classList.add("product__title");
-  productTitle.textContent = "Hello World";
+//   const productTitle = document.createElement("h4");
+//   productTitle.classList.add("product__title");
+//   productTitle.textContent = "Hello World";
 
-  const productPrice = document.createElement("span");
-  productPrice.classList.add("product__price");
-  productPrice.textContent = "0";
+//   const productPrice = document.createElement("span");
+//   productPrice.classList.add("product__price");
+//   productPrice.textContent = "0";
 
-  itemRight.appendChild(productTitle);
-  itemRight.appendChild(productPrice);
-  mainContainer.appendChild(itemContainer);
+//   itemRight.appendChild(productTitle);
+//   itemRight.appendChild(productPrice);
+//   mainContainer.appendChild(itemContainer);
 
-  const bodyElement = document.querySelector("body");
-  bodyElement.appendChild(mainContainer);
-}
-renderElements();
+//   const bodyElement = document.querySelector("body");
+//   bodyElement.appendChild(mainContainer);
+// }
+// renderElements();
