@@ -4,6 +4,12 @@ fetch("https://dummyjson.com/products")
     renderElements(data);
   });
 
+fetch("https://dummyjson.com/products")
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data.products);
+  });
+
 // fetch("https://dummyjson.com/products")
 //   .then((res) => res.json())
 //   .then((data) => console.log(data));
@@ -89,18 +95,18 @@ function renderElements(data) {
     mobilePath.innerText = "Mobil Telefonlar >";
     const spanName = document.createElement("span");
     spanName.classList.add("product__name");
-    spanName.innerText = "Product Name";
+    spanName.innerText = product.title;
     mobilePath.appendChild(spanName);
 
-    const productTitle = document.createElement("h4");
-    productTitle.classList.add("product__title");
-    productTitle.textContent = product.title;
+    const productDescription = document.createElement("h4");
+    productDescription.classList.add("product__title");
+    productDescription.textContent = product.description;
 
     const productPrice = document.createElement("span");
     productPrice.classList.add("product__price");
-    productPrice.textContent = "0";
+    productPrice.textContent = product.price + "AZN";
     itemRight.appendChild(mobilePath);
-    itemRight.appendChild(productTitle);
+    itemRight.appendChild(productDescription);
     itemRight.appendChild(productPrice);
     mainContainer.appendChild(itemContainer);
 
